@@ -53,7 +53,7 @@ function AffiliateMarket() {
   const totalPages = Math.ceil(products.length / productsPerPage);
 
   return (
-    <Container maxWidth="lg" sx={{ mt: 5, mb: 10, height: "auto" }}>
+    <Container maxWidth="100%" sx={{ mt: 5, mb: 10, height: "auto" }}>
       <Typography
         variant="h3"
         align="left"
@@ -65,7 +65,7 @@ function AffiliateMarket() {
 
       <Grid container spacing={3}>
         {currentProducts?.map((product) => (
-          <Grid item size={{ xs: 12, sm: 4, md: 4 }} key={product?.id}>
+          <Grid item size={{ xs: 12, sm: 4, md: 4,lg:3 }} key={product?.id}>
             <Link
               href={`/affiliate-market/${product.slug}`}
               style={{ textDecoration: "none" }}
